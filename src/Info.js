@@ -33,7 +33,7 @@ class Info extends Component {
     render() { 
         return (
             <div>
-            <a href="Covid-Case-Tracker/#/Covid-Case-Tracker">
+            <a href="/Covid-Case-Tracker/#/Covid-Case-Tracker">
                 <button> Go Back </button>
             </a>
             <br/>
