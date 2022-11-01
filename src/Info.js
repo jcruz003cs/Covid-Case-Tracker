@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Plot from "react-plotly.js"
 
 class Info extends Component {
     constructor(props) {
@@ -16,12 +17,38 @@ class Info extends Component {
         .then(data => {this.setState({data:data})})
     }
 
-
+    transformData(data){
+        console.log(data)
+        let plot_data = []
+        let x = []
+        let y = []
+        data.map(each => {
+            x.push(each.City)
+            y.push(each.Cases)
+        })
+        plot_data['x'] = x
+        plot_data['y'] = y
+        console.log(plot_data)
+        return plot_data
+    }
+    
     render() { 
         console.log(this.state.data)
         return (
             <div>
-            <h1>Test Info</h1>
+            <a href="/#/Covid-Case-Tracker">
+                <button> Go Back </button>
+            </a>
+            <br/>
+            <Plot
+                data = {[
+                    {
+                        type: 'bar',
+                        x: this.transformData(this.state.data)['x'],
+                        y: this.transformData(this.state.data)['y']
+                    }
+                ]}
+            />
             </div>
         );
     }
