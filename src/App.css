@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.Form-form{
+  background: rgb(22,22,22);
+  color : whitesmoke;
+  width: 500px;
+  block-size: 500px;
+  left: 40%;
+  top:20%;
+  position: fixed;
+  padding-top: 50px;
+}

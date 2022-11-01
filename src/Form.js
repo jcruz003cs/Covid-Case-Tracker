@@ -27,9 +27,9 @@ class Form extends Component {
     }
     render() { 
         return (
-            <form onSubmit={this.handleSubmit}>
-                <div>
-                    <label>State: 
+            <form onSubmit={this.handleSubmit} className = "Form-form">
+                <div className = "Form-div">
+                    <label className = "Form-label">State: 
                         <select name="stateName" value={this.state.value} onChange = {this.handleChange}>
                             <option>-- Select a State --</option>
                             {this.state.statesArray.map((option) => (
