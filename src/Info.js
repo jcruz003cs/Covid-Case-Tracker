@@ -36,7 +36,7 @@ class Info extends Component {
         console.log(this.state.data)
         return (
             <div>
-            <a href="/#/Covid-Case-Tracker">
+            <a href="Covid-Case-Tracker/#/Covid-Case-Tracker">
                 <button> Go Back </button>
             </a>
             <br/>
@@ -48,6 +48,7 @@ class Info extends Component {
                         y: this.transformData(this.state.data)['y']
                     }
                 ]}
+                layout = {{width: 2500, height: 1000, title: "Covid Case Count per City"}}
             />
             </div>
         );
