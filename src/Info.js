@@ -18,7 +18,6 @@ class Info extends Component {
     }
 
     transformData(data){
-        console.log(data)
         let plot_data = []
         let x = []
         let y = []
@@ -28,15 +27,13 @@ class Info extends Component {
         })
         plot_data['x'] = x
         plot_data['y'] = y
-        console.log(plot_data)
         return plot_data
     }
     
     render() { 
-        console.log(this.state.data)
         return (
             <div>
-            <a href="Covid-Case-Tracker/#/Covid-Case-Tracker">
+            <a href="/#/Covid-Case-Tracker">
                 <button> Go Back </button>
             </a>
             <br/>

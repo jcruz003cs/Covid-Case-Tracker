@@ -12,7 +12,6 @@ class Form extends Component {
         this.handleChange = this.handleChange.bind(this)
     }
     handleChange(event){
-        console.log(event.target.value)
         const {name, value} = event.target
         this.setState({
             [name]:value
