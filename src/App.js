@@ -3,6 +3,7 @@ import React from "react"
 import {HashRouter as HashRouter, Routes, Route} from "react-router-dom"
 import Form from "./Form"
 import Info from './Info'
+import Predict from './Predict';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path = "/Covid-Case-Tracker" element = {<Form/>}/>
           <Route path = "/info" element = {<Info/>}/>
+          <Route path = "/Predict" element = {<Predict/>}/>
         </Routes>
       </HashRouter>
     </div>

@@ -47,6 +47,10 @@ class Info extends Component {
                 ]}
                 layout = {{width: 2500, height: 1000, title: "Covid Case Count per City"}}
             />
+            <a href="/Covid-Case-Tracker/#/Predict">
+                <button> Predict </button>
+            </a>
+            <br/>
             </div>
         );
     }
